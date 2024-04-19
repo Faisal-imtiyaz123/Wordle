@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .rotateY{
+    transform: rotateX(180deg);
+    transition: transform 0.8s;
+  }
+}
+@keyframes flipX {
+    0% {
+      transform: rotateX(0deg);
+    }
+    100% {
+      transform: rotateX(180deg);
+    }
+}
+@keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+    
+}
+@keyframes pop-up {
+  from {
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+
+.flip {
+  animation: flipX 0.5s;
+}
+.animate-shake {
+  animation: shake 0.5s;
+}
+.pop {
+    animation: pop-up 0.2s;
+}
