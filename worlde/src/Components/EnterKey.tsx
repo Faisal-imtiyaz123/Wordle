@@ -65,7 +65,7 @@ export default function EnterKey() {
   }
   
   return (
-    <button onClick={handleClickEnter}>
+    <button className="flex items-center ml-1 bg-green-200 px-[3rem] rounded-md p-1" onClick={handleClickEnter}>
         Enter
     </button>
   )

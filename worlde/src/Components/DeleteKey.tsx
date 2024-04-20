@@ -17,7 +17,7 @@ export default function DeleteKey() {
     }
   }
   return (
-    <button onClick={handleClickDelete}>
+    <button className="flex items-center mr-1 bg-red-200 px-[3rem] rounded-md p-1" onClick={handleClickDelete}>
         Delete
     </button>
   )
